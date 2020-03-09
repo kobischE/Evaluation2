@@ -1,0 +1,477 @@
+/* >>FONTS<<< */
+
+@font-face{
+    font-family:"Forte";
+    src: url("../fonts/FORTE.TTF") format("truetype")
+}
+
+@font-face{
+    font-family:"BradleyHand";
+    src: url("../fonts/BRADHITC.TTF") format("truetype")
+}
+
+@font-face{
+    font-family:"Candara";
+    src: url("../fonts/Candara.ttf") format("truetype")
+}
+
+@font-face{
+    font-family:"Candaralight";
+    src: url("../fonts/Candarali.ttf") format("truetype")
+}
+
+
+body{
+    background-color:#f8f2f2;
+}
+   
+a{
+    text-decoration:none;
+    color: rgb(77, 73, 73);
+}   
+ 
+/* HEADER (TITRE/àpropos ) */
+
+   
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: relative;
+}
+
+h1 {
+    font-family: "Forte";
+    font-size: 140%;
+    max-width : 60%;
+    max-height: 80%;
+    margin-top: -12em;
+    margin-left: 0.2em;
+    margin-right: 1em;
+    border: 0.3px solid black;
+}
+
+   
+.title{
+    text-align: start;
+    margin-top:  1.5em; 
+    margin-left: 1.6em;  
+}
+
+
+.apropos {
+    text-align: end;
+    block-size: auto;
+    text-align: center;
+    max-width: 40%; 
+    max-height: 20%;
+    margin-left: 10em;
+    margin-top: -0.9em;
+    border: 1px solid black;
+}
+
+
+/* MENU------------------ */
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    justify-content: space-between;
+    margin-right: 0,2em;
+    margin-top: 4em;
+}   
+    
+ul .b1,
+   .b2,
+   .b3,
+   .b4,
+   .b5,
+   .b6 {  
+     display: flex;
+     flex-direction: row;
+     justify-content:space-between;
+     list-style: none;
+}  
+
+/* container---------------- */
+   
+.container { 
+      display: flex;
+      flex-direction: row;  
+      align-self: center;
+      justify-content:space-between;
+      flex-wrap: wrap;
+      align-content: stretch;
+}     
+
+/* .image1 : conteneur #bun  */
+
+.image1 { 
+    display: flex;
+    flex-direction: row;  
+    justify-content:center; 
+    align-self: flex-start;
+
+    margin-top: 6em; 
+    margin-left:2em;
+
+    width: 10%;
+    height:auto; 
+} 
+
+/* #bun---------------------  */
+
+
+#Bun{ 
+    border: solid black 1.5px;
+    position: relative;
+}
+
+/* images2et4 : CONTIENT buton 2 et 4  */
+
+.images2et4 { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+   
+    width: 10%;
+    height:  auto;
+    margin-top: 6em;
+}
+
+/*  BUTTON 2 */
+
+ #bdeux {
+     display: flex;
+     justify-self: flex-start;
+     width: 5%;
+     height: auto;
+     border: solid black 1px;
+}
+
+/* BUTTON 4  */
+
+ #bquatre {
+    display: flex;
+    justify-self: flex-end;
+
+    width: 5%;
+    margin-top: 3em;
+    border: solid black 1.5px;
+}
+
+
+/* --->>> images3et5 : contient buton3 et buton5  */
+
+.images3et5 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-self: flex-end;
+    justify-content: space-between;
+
+    width: 15%;
+    height:auto;
+}
+
+/*  BUTTON 3  */
+
+#btrois {
+    display: flex;
+    justify-self: flex-start;
+    width: 5%;
+    height:auto;
+
+    margin-top: 4em;
+    margin-left: 3em;
+    margin-right: 6em;
+    border: solid black 1.5px;
+}
+
+/*  BUTTON 5  */
+
+#bcinq {
+    display: flex;
+    justify-self: flex-end;
+
+    width: 5%;
+    height: auto;
+
+    margin-right: 3em;
+    border: solid black 1.5px;
+}
+
+
+/* VIDEO */
+
+
+.video {
+    display: flex;
+    justify-self:center;
+
+    width: 60%;
+    height: auto;  
+    margin-top: 5em;
+    margin-left: 13em;
+    border: solid black 1px;
+}
+
+.réseaux {
+    display:flex;
+    flex-direction: row; 
+    width: 40%;
+    height: auto;   
+    margin-top: 5em;
+    margin-left: 35em;
+    border: solid black 1px;
+}
+
+
+.facebook{
+    display: flex; 
+    justify-self: flex-start;
+    width: 40%;
+    height: auto;
+    margin-left: 3em;
+    margin-top: -3em;
+}
+
+.instagram{ 
+    display: flex; 
+    justify-self: flex-end;
+    width: 40%;
+    height: auto;
+    margin-left: 4em;
+    margin-top: -3em;
+}
+
+p {
+    font-family: "CandaraLight";
+    font-size: 50px;
+    margin-left: 10em;
+    margin-top: -1.5em;
+}
+
+
+
+
+
+
+/* !!!!MEDIA MIN 450px AND MAX 800PX!!!!!---------------------------- */
+
+@media screen and (min-width: 450px) and (max-width: 800px){
+         
+ .menu {       
+        width:30%;
+        height:auto;   
+} 
+
+.image1 { 
+        margin-top: 6em; 
+        margin-left:2em;
+        width: 20%;
+        height:auto; 
+} 
+
+.images2et4 { 
+        width: 30%;
+        height:auto;
+        margin-top: 6em;
+}
+
+#bdeux {
+    width: 15%;
+    height: auto;
+}    
+
+#bquatre {
+   width: 15%;
+   margin-top: 3em;
+}
+  
+.images3et5 {
+    width: 30%;
+    height:auto;
+}
+
+/*  BUTTON 3  */
+
+#btrois {
+    width: 15%;
+    height: auto;
+
+    margin-top: 4em;
+    margin-left: 3em;
+    margin-right: 6em;
+}
+
+/*  BUTTON 5  */
+
+#bcinq {
+    width: 15%;
+    height: auto;
+    margin-right: 3em;
+}
+
+.video {
+        width: 60%;
+        height: auto;  
+        margin-top: 6em;
+        margin-left: 12em;
+}
+
+.réseaux {
+    width: 50%;
+    height: auto;
+    margin-top: 5em;
+    margin-left: 35em;
+}
+
+.facebook{
+    width: 50%;
+    height: auto;
+    margin-left: 3em;
+    margin-top: -3em;
+}
+
+.instagram{
+    width: 50%;
+    height: auto;
+    margin-left: 4em;
+    margin-top: -3em;
+}
+
+.p {
+    font-family: "CandaraLight";
+    font-size: 50px;
+    margin-left: 10em;
+    margin-top: -1.5em;
+}
+   
+}    
+ /* !!!!MEDIA MIN 801px AND MAX 1100PX!!!!!---------------------------- */  
+   
+@media screen and (min-width: 801px) and (max-width:1100px){
+         
+    .menu  {       
+        max-width:  60%;
+        max-height: 20%;  
+    } 
+
+    .image1 { 
+        width: 30%;
+        height:auto; 
+} 
+    .images2et4 { 
+         margin-top: 6em;
+         width: 60%;
+    }
+    
+    #bdeux {
+         width: 20%;
+         height: auto;
+    }    
+    
+    #bquatre {
+       width: 20%;
+       margin-top: 3em;
+    } 
+
+    .images3et5 {
+        width: 40%;
+        height:auto;
+    }
+    
+    #btrois {
+        width: 20%;
+        height: auto;
+    }
+    
+    /*  BUTTON 5  */
+    
+    #bcinq {
+        width: 20%;
+        height: auto;
+       
+    }
+
+    .réseaux {
+        width: 60%;
+        height: auto;
+}
+    .facebook{
+        width: 60%;
+        height: auto;
+}
+
+    .instagram{
+         width: 60%;
+         height: auto;
+}
+
+}      
+/* !!!!MEDIA MIN 1100px!!!!!---------------------------- */
+
+@media screen and (min-width: 1101px) {
+   
+    .menu {
+       display: flex;
+       flex-direction: column;
+       justify-content:space-between;
+       max-width: 36%;
+       max-height: 12%;
+       margin-right: 0,2em;
+    } 
+         
+    
+    .container { 
+        display: flex;
+        flex-direction: row; 
+        flex-wrap: wrap;       
+    }     
+  
+    
+    #image1{    
+        margin-top: 10em; 
+        width: 60%;   
+    }
+     
+    .video {
+        width: 60%;
+        height: auto;  
+        margin-top: 5em;
+        margin-left: 13em;
+    }
+    
+    .réseaux {
+        width: 30%;
+        margin-top: 5em;
+        margin-left: 35em;
+    }
+    .facebook{
+        width: 60%;
+        height: auto;
+        margin-left: 3em;
+        margin-top: -3em;
+    }
+    
+    .instagram{
+        width: 60%;
+        height: auto;
+        margin-left: 4em;
+        margin-top: -3em;
+    }
+    
+    .p {
+        font-family: "CandaraLight";
+        font-size: 50px;
+        margin-left: 10em;
+        margin-top: -1.5em;
+    }
+    
+
+
+   }  
+
+
+ 
